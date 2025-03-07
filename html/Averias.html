@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página para gestionar las averías del taller">
+    <meta
+      name="keywords"
+      content="taller, máquina, machine, gestión, management"
+    />
+    <meta name="author" content="Nereida, Ayman, Diego">
+    <title>Gestión de Averías</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../css/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo-company">
+            <img src="../images/logo.png" alt="Logo de la empresa">
+        </div>
+        <div class="mb-menu-toggle">
+            &#9776;
+        </div>
+        <nav class="main-menu-header hide-me">
+            <ul>
+                <li><a href="../html/Maquinas.html">Máquinas</a></li>
+                <li><a href="../html/Partes_Trabajo.html">Partes de trabajo</a></li>
+                <li><a href="../html/UserMain.html">Usuarios</a></li>
+                <li><a href="../html/Averias.html">Averías</a></li>
+                <li><a href="../html/login.html">Cerrar sesión</a></li>
+              </ul>
+        </nav>
+    </header>
+    <main>    
+            <h1>Listado de Averías <span class="icon">⚠️</span></h1>
+            <div class="breakdown-list">
+                <!-- Tabla de averías -->
+                <table id="table-all-faults">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Número de Serie</th>
+                            <th>Fecha Reporte</th>
+                            <th>Descripción</th>
+                            <th>Duración (hrs)</th>
+                            <th>Tipo</th>
+                            <th>Operario</th>
+                            <th>Mecánico</th>
+                            <th>Coste (€)</th>
+                            <th>Fecha Resolución</th>
+                            <th>Estado</th>
+                            <th>Comentarios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Fila de ejemplo -->
+                        <tr>
+                            <td>45187</td>
+                            <td>SN4578</td>
+                            <td>2025-01-02</td>
+                            <td>Fallo del encendido</td>
+                            <td>48</td>
+                            <td>Eléctrico</td>
+                            <td>Ana Vázquez</td>
+                            <td>Carlos López</td>
+                            <td>125</td>
+                            <td>2025-01-04</td>
+                            <td>Resuelto</td>
+                            <td>Reemplazo de pieza quemada.</td>
+                        </tr>
+                        <tr>
+                            <td>72156</td>
+                            <td>SN12345</td>
+                            <td>2025-01-15</td>
+                            <td>Fallo en motor</td>
+                            <td>6</td>
+                            <td>Eléctrico</td>
+                            <td>Juan Pérez</td>
+                            <td>Carlos López</td>
+                            <td>500</td>
+                            <td>2025-01-16</td>
+                            <td>Resuelto</td>
+                            <td>Se reemplazó el motor principal.</td>
+                        </tr>
+                        <tr>
+                            <td>01342</td>
+                            <td>SN2815</td>
+                            <td>2025-01-10</td>
+                            <td>Pieza suelta</td>
+                            <td>1</td>
+                            <td>Mecánico</td>
+                            <td>Isabel Urtia</td>
+                            <td>Marina Campos</td>
+                            <td>0</td>
+                            <td>2025-01-10</td>
+                            <td>Resuelto</td>
+                            <td>Ajuste de la pieza</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="button-wrapper">
+            <button onclick="window.location.href='./addFault.html'">Reportar avería</button>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Empresa XYZ</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página de crear averías" />
+    <meta
+      name="keywords"
+      content="taller, máquina, machine, gestión, management"
+    />
+    <meta name="author" content="Nereida, Ayman, Diego" />
+    <title>Añadir tarea</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../css/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-company">
+        <img src="../images/logo.png" alt="Logo de la empresa" />
+      </div>
+      <div class="mb-menu-toggle">&#9776;</div>
+      <nav class="main-menu-header hide-me">
+        <ul>
+          <li><a href="../html/Maquinas.html">Máquinas</a></li>
+          <li><a href="../html/Partes_Trabajo.html">Partes de trabajo</a></li>
+          <li><a href="../html/UserMain.html">Usuarios</a></li>
+          <li><a href="../html/Averias.html">Averías</a></li>
+          <li><a href="../html/login.html">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <!-- Flecha para volver a la página anterior -->
+      <a href="../html/Maquinas.html" class="back-arrow">&#8592;</a>
+      <div class="form-container">
+        <h1>Nueva Avería</h1>
+        <form action="/submit-form" method="POST">
+          <div class="form-group">
+            <label for="desc">Descripción</label>
+            <textarea type="text" id="desc" name="desc" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="id">Número de serie</label>
+            <input
+              type="text"
+              id="id"
+              name="id"
+              placeholder="Ej. Z12SR5678A"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="tipo">Tipo</label>
+            <input
+              type="text"
+              id="tipo"
+              name="tipo"
+              placeholder="Ej. Eléctrico"
+              required
+            />
+            <div class="form-group">
+              <label for="id-user">Operario reportante</label>
+              <input
+                type="text"
+                id="id-user"
+                name="id-user"
+                placeholder="Ej. 12345678Z"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="date">Fecha de reporte</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <button
+            type="submit"
+            onclick="window.location.href='./Maquinas.html'"
+          >
+            Crear
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 Empresa XYZ</p>
+    </footer>
+  </body>
+</html>

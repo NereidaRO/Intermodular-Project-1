@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página de entrada a la aplicación" />
+    <meta
+      name="keywords"
+      content="taller, máquina, machine, gestión, management"
+    />
+    <meta name="author" content="Nereida, Ayman, Diego" />
+    <title>Entrada</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../css/script.js"></script>
+  </head>
+  <body id="body-login-page">
+    <video autoplay muted loop id="video-fondo">
+      <source src="../images/video-fondo.mp4" type="video/mp4" />
+    </video>
+    <!-- Contenedor de login -->
+    <div class="login-container">
+      <h1>Iniciar Sesión</h1>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="usuario"><i class="fa-solid fa-user"></i></label>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            placeholder="Ingresa tu usuario"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="contrasenya"><i class="fa-solid fa-key"></i></label>
+          <input
+            type="password"
+            id="contrasenya"
+            name="contrasenya"
+            placeholder="Ingresa tu contraseña"
+            required
+          />
+        </div>
+        <button type="submit" onclick="window.location.href='./HomePage.html'">
+          Iniciar Sesión
+        </button>
+      </form>
+
+      <div class="options">
+        <a href="#" class="link">He olvidado la contraseña</a>
+      </div>
+    </div>
+  </body>
+</html>
