@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Login page for the application" />
+    <meta
+      name="keywords"
+      content="workshop, machine, management"
+    />
+    <meta name="author" content="Nereida, Ayman, Diego" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../css/script.js"></script>
+  </head>
+  <body id="body-login-page">
+    <video autoplay muted loop id="video-background">
+      <source src="../images/video-fondo.mp4" type="video/mp4" />
+    </video>
+    <!-- Login container -->
+    <div class="login-container">
+      <h1>Login</h1>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="usuario"><i class="fa-solid fa-user"></i></label>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            placeholder="Enter your username"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="contrasenya"><i class="fa-solid fa-key"></i></label>
+          <input
+            type="password"
+            id="contrasenya"
+            name="contrasenya"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <button type="submit" onclick="window.location.href='./HomePage.html'">
+          Login
+        </button>
+      </form>
+
+      <div class="options">
+        <a href="#" class="link">I forgot my password</a>
+      </div>
+    </div>
+  </body>
+</html>
