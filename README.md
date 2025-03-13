@@ -12,4 +12,5 @@ Ayman El Hattachi, Diego Bermejo, Nereida Rodríguez. DAM, first year.
 
 - HTML
 - CSS
-- Translation Tools: WordReference, Wikipedia, the teacher.
+- JavaScript
+- Translation Tools: WordReference, Wikipedia, the teacher, Collins Dictionary, Linguee.

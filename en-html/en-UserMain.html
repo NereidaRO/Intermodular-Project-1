@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Página privada del usuario" />
-    <meta
-      name="keywords"
-      content="taller, máquina, machine, gestión, management"
-    />
+    <meta name="description" content="User's personal page" />
+    <meta name="keywords" content="taller, user, management, personal" />
     <meta name="author" content="Nereida, Ayman, Diego" />
-    <title>Calendario Semanal</title>
+    <title>Weekly Schedule</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -20,16 +17,16 @@
   <body id="main-page-user">
     <header>
       <div class="logo-company">
-        <img src="../images/logo.png" alt="Logo de la empresa" />
+        <img src="../images/logo.png" alt="Company's logo" />
       </div>
       <div class="mb-menu-toggle">&#9776;</div>
       <nav class="main-menu-header hide-me">
         <ul>
-          <li><a href="../html/Maquinas.html">Máquinas</a></li>
-          <li><a href="../html/Partes_Trabajo.html">Partes de trabajo</a></li>
-          <li><a href="../html/UserMain.html">Usuarios</a></li>
-          <li><a href="../html/Averias.html">Averías</a></li>
-          <li><a href="../html/login.html">Cerrar sesión</a></li>
+          <li><a href="../html/Maquinas.html">Machines</a></li>
+          <li><a href="../html/Partes_Trabajo.html">Assignments</a></li>
+          <li><a href="../html/UserMain.html">Users</a></li>
+          <li><a href="../html/Averias.html">Breakdowns</a></li>
+          <li><a href="../html/login.html">Log out</a></li>
         </ul>
       </nav>
     </header>
@@ -37,9 +34,9 @@
       <div class="user-info">
         <img src="../images/Captura.PNG" alt="Foto de Usuario" />
         <div>
-          <h1>Pepe Martínez</h1>
-          <p>Operario</p>
-          <p>NIF: 12345678F</p>
+          <h1>John Doe</h1>
+          <p>Worker</p>
+          <p>NID: 12345678F</p>
         </div>
       </div>
       <div class="calendar">
@@ -47,20 +44,20 @@
           <table class="calendar-table">
             <thead>
               <tr>
-                <th>Hora</th>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miércoles</th>
-                <th>Jueves</th>
-                <th>Viernes</th>
-                <th>Sábado</th>
-                <th>Domingo</th>
+                <th>Time</th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
               </tr>
             </thead>
             <tbody>
-              <!-- Repetir para cada hora -->
+              <!-- Repeat for each hour -->
               <tr>
-                <td>05:00</td>
+                <td>05:00AM</td>
                 <td class="work-day"></td>
                 <td class="holiday"></td>
                 <td class="vacation"></td>
@@ -70,7 +67,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>06:00</td>
+                <td>06:00AM</td>
                 <td class="work-day"></td>
                 <td class="holiday"></td>
                 <td class="vacation"></td>
@@ -80,7 +77,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>07:00</td>
+                <td>07:00AM</td>
                 <td class="work-day"></td>
                 <td class="holiday"></td>
                 <td class="vacation"></td>
@@ -90,7 +87,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>08:00</td>
+                <td>08:00AM</td>
                 <td class="work-day"></td>
                 <td class="holiday"></td>
                 <td class="vacation"></td>
@@ -100,7 +97,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>09:00</td>
+                <td>09:00AM</td>
                 <td class="work-day"></td>
                 <td class="holiday"></td>
                 <td class="vacation"></td>
@@ -110,7 +107,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>10:00</td>
+                <td>10:00AM</td>
                 <td class="work-day"></td>
                 <td class="holiday"></td>
                 <td class="vacation"></td>
@@ -120,7 +117,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>11:00</td>
+                <td>11:00AM</td>
                 <td class="work-day"></td>
                 <td class="holiday"></td>
                 <td class="vacation"></td>
@@ -130,7 +127,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>12:00</td>
+                <td>12:00PM</td>
                 <td class="work-day"></td>
                 <td class="holiday"></td>
                 <td class="vacation"></td>
@@ -140,7 +137,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>13:00</td>
+                <td>01:00PM</td>
                 <td class="work-day"></td>
                 <td class="holiday"></td>
                 <td class="vacation"></td>
@@ -149,15 +146,14 @@
                 <td></td>
                 <td></td>
               </tr>
-              <!-- Agregar más filas para otras horas -->
             </tbody>
           </table>
           <div class="button-wrapper calendar-button">
             <button onclick="window.location.href='./UserMain.html'">
-              <i class="fa-solid fa-arrow-left"></i> Semana Anterior
+              <i class="fa-solid fa-arrow-left"></i> Previous Week
             </button>
             <button onclick="window.location.href='./UserMain.html'">
-              Siguiente Semana <i class="fa-solid fa-arrow-right"></i>
+              Next Week <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
@@ -172,7 +168,7 @@
       </div>
     </div>
     <footer>
-      <p>&copy; 2025 Empresa XYZ</p>
+      <p>&copy; 2025 Company XYZ</p>
     </footer>
   </body>
 </html>
