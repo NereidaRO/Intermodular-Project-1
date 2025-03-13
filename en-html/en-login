@@ -31,7 +31,7 @@
             type="text"
             id="usuario"
             name="usuario"
-            placeholder="Enter your User Name"
+            placeholder="Enter your user name"
             required
           />
         </div>
