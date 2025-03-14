@@ -112,7 +112,7 @@
               type="tel"
               id="telefono1"
               name="telefono1"
-              placeholder="Ex. 600123456"
+              placeholder="Ex. + 44 600123456"
               required
             />
           </div>
@@ -122,7 +122,7 @@
               type="tel"
               id="telefono2"
               name="telefono2"
-              placeholder="Ex. 600654321"
+              placeholder="Ex. + 44 600654321"
             />
           </div>
           <button type="submit">Submit</button>
