@@ -79,7 +79,7 @@
       </table>
       <div class="button-wrapper">
         <button onclick="window.location.href='./addTarea.html'">
-          Add New Task
+          Add New Assignment
         </button>
       </div>
     </main>
