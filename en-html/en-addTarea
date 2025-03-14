@@ -22,7 +22,7 @@
       <nav class="main-menu-header hide-me">
         <ul>
           <li><a href="../html/Maquinas.html">Machines</a></li>
-          <li><a href="../html/Partes_Trabajo.html">Tasks</a></li>
+          <li><a href="../html/Partes_Trabajo.html">Assignments</a></li>
           <li><a href="../html/UserMain.html">Users</a></li>
           <li><a href="../html/Averias.html">Breakdowns</a></li>
           <li><a href="../html/login.html">Sign out</a></li>
