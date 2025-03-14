@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Página de tareas para un usuario" />
+    <meta name="description" content="User task page" />
     <meta
       name="keywords"
       content="taller, máquina, machine, gestión, management"
     />
     <meta name="author" content="Nereida, Ayman, Diego" />
-    <title>Partes de Trabajo</title>
+    <title>Assignments</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -21,35 +21,35 @@
     <!-- Barra de navegación sticky -->
     <header>
       <div class="logo-company">
-        <img src="../images/logo.png" alt="Logo de la empresa" />
+        <img src="../images/logo.png" alt="Company Logo" />
       </div>
       <div class="mb-menu-toggle">&#9776;</div>
       <nav class="main-menu-header hide-me">
         <ul>
-          <li><a href="../html/Maquinas.html">Máquinas</a></li>
-          <li><a href="../html/Partes_Trabajo.html">Partes de trabajo</a></li>
-          <li><a href="../html/UserMain.html">Usuarios</a></li>
-          <li><a href="../html/Averias.html">Averías</a></li>
-          <li><a href="../html/login.html">Cerrar sesión</a></li>
+          <li><a href="../html/Maquinas.html">Machines</a></li>
+          <li><a href="../html/Partes_Trabajo.html">Assignments</a></li>
+          <li><a href="../html/UserMain.html">Users</a></li>
+          <li><a href="../html/Averias.html">Breakdowns</a></li>
+          <li><a href="../html/login.html">Log out</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Partes de Trabajo <span class="icon">📋</span></h1>
+      <h1>Assignments <span class="icon">📋</span></h1>
 
       <!-- Tabla de trabajo -->
       <table class="work-table">
         <thead>
           <tr>
             <th>ID</th>
-            <th>Trabajo</th>
-            <th>Más</th>
+            <th>Task</th>
+            <th>More</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>001</td>
-            <td>Montaje de piezas</td>
+            <td>Part assembly</td>
             <td>
               <button onclick="window.location.href='./detalleTarea.html'">
                 <i class="fa-solid fa-circle-info"></i>
@@ -58,7 +58,7 @@
           </tr>
           <tr>
             <td>002</td>
-            <td>Inspección de calidad</td>
+            <td>Quality inspection</td>
             <td>
               <button onclick="window.location.href='./detalleTarea.html'">
                 <i class="fa-solid fa-circle-info"></i>
@@ -67,7 +67,7 @@
           </tr>
           <tr>
             <td>003</td>
-            <td>Embalaje y etiquetado</td>
+            <td>Packaging and labeling</td>
             <td>
               <button onclick="window.location.href='./detalleTarea.html'">
                 <i class="fa-solid fa-circle-info"></i>
@@ -79,12 +79,12 @@
       </table>
       <div class="button-wrapper">
         <button onclick="window.location.href='./addTarea.html'">
-          Añadir tarea
+          Add New Assignment
         </button>
       </div>
     </main>
     <footer>
-      <p>&copy; 2025 Empresa XYZ</p>
+      <p>&copy; 2025 XYZ Company</p>
     </footer>
   </body>
 </html>

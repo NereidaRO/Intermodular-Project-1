@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página para gestionar las averías del taller">
+    <meta name="description" content="Breakdown administration page">
     <meta
       name="keywords"
       content="taller, máquina, machine, gestión, management"
     />
     <meta name="author" content="Nereida, Ayman, Diego">
-    <title>Gestión de Averías</title>
+    <title>Breakdowns management</title>
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../css/script.js"></script>
 </head>
@@ -24,33 +24,33 @@
         </div>
         <nav class="main-menu-header hide-me">
             <ul>
-                <li><a href="../html/Maquinas.html">Máquinas</a></li>
-                <li><a href="../html/Partes_Trabajo.html">Partes de trabajo</a></li>
-                <li><a href="../html/UserMain.html">Usuarios</a></li>
-                <li><a href="../html/Averias.html">Averías</a></li>
-                <li><a href="../html/login.html">Cerrar sesión</a></li>
+                <li><a href="../html/Maquinas.html">Machines</a></li>
+                <li><a href="../html/Partes_Trabajo.html">Assignments</a></li>
+                <li><a href="../html/UserMain.html">Users</a></li>
+                <li><a href="../html/Averias.html">Breakdowns</a></li>
+                <li><a href="../html/login.html">Log out</a></li>
               </ul>
         </nav>
     </header>
     <main>    
-            <h1>Listado de Averías <span class="icon">⚠️</span></h1>
+            <h1>Breakdown List <span class="icon">⚠️</span></h1>
             <div class="breakdown-list">
                 <!-- Tabla de averías -->
                 <table id="table-all-faults">
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Número de Serie</th>
-                            <th>Fecha Reporte</th>
-                            <th>Descripción</th>
-                            <th>Duración (hrs)</th>
-                            <th>Tipo</th>
-                            <th>Operario</th>
-                            <th>Mecánico</th>
-                            <th>Coste (€)</th>
-                            <th>Fecha Resolución</th>
-                            <th>Estado</th>
-                            <th>Comentarios</th>
+                            <th>Serial Number</th>
+                            <th>Report Date</th>
+                            <th>Description</th>
+                            <th>Downtime (hrs)</th>
+                            <th>Kind of breakdown</th>
+                            <th>Worker</th>
+                            <th>Mechanic</th>
+                            <th>Cost (€)</th>
+                            <th>Fixing date</th>
+                            <th>State</th>
+                            <th>Additional comments</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -59,56 +59,56 @@
                             <td>45187</td>
                             <td>SN4578</td>
                             <td>2025-01-02</td>
-                            <td>Fallo del encendido</td>
+                            <td>Power Failure</td>
                             <td>48</td>
-                            <td>Eléctrico</td>
+                            <td>Electric</td>
                             <td>Ana Vázquez</td>
                             <td>Carlos López</td>
                             <td>125</td>
                             <td>2025-01-04</td>
-                            <td>Resuelto</td>
-                            <td>Reemplazo de pieza quemada.</td>
+                            <td>Fixed</td>
+                            <td>Burnt part replacement</td>
                         </tr>
                         <tr>
                             <td>72156</td>
                             <td>SN12345</td>
                             <td>2025-01-15</td>
-                            <td>Fallo en motor</td>
+                            <td>Engine Failure</td>
                             <td>6</td>
-                            <td>Eléctrico</td>
+                            <td>electric</td>
                             <td>Juan Pérez</td>
                             <td>Carlos López</td>
                             <td>500</td>
                             <td>2025-01-16</td>
-                            <td>Resuelto</td>
-                            <td>Se reemplazó el motor principal.</td>
+                            <td>Fixed</td>
+                            <td>Main engine was replaced.</td>
                         </tr>
                         <tr>
                             <td>01342</td>
                             <td>SN2815</td>
                             <td>2025-01-10</td>
-                            <td>Pieza suelta</td>
+                            <td>loose Part</td>
                             <td>1</td>
-                            <td>Mecánico</td>
+                            <td>Mechanic</td>
                             <td>Isabel Urtia</td>
                             <td>Marina Campos</td>
                             <td>0</td>
                             <td>2025-01-10</td>
-                            <td>Resuelto</td>
-                            <td>Ajuste de la pieza</td>
+                            <td>Fixed</td>
+                            <td>Part adjustement</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
         <div class="button-wrapper">
-            <button onclick="window.location.href='./addFault.html'">Reportar avería</button>
+            <button onclick="window.location.href='./addFault.html'">Report New Breakdown</button>
         </div>
         
     </main>
 
     <footer>
-        <p>&copy; 2025 Empresa XYZ</p>
+        <p>&copy; 2025 XYZ Company</p>
     </footer>
 </body>
 </html>

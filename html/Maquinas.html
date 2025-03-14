@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Listado de máquinas del taller" />
+    <meta name="description" content="List of workshop machines" />
     <meta
       name="keywords"
       content="taller, máquina, machine, gestión, management"
     />
     <meta name="author" content="Nereida, Ayman, Diego" />
-    <title>Listado de Máquinas</title>
+    <title>List of machines</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link
       rel="stylesheet"
@@ -26,64 +26,64 @@
       <div class="mb-menu-toggle">&#9776;</div>
       <nav class="main-menu-header hide-me">
         <ul>
-          <li><a href="../html/Maquinas.html">Máquinas</a></li>
-          <li><a href="../html/Partes_Trabajo.html">Partes de trabajo</a></li>
-          <li><a href="../html/UserMain.html">Usuarios</a></li>
-          <li><a href="../html/Averias.html">Averías</a></li>
-          <li><a href="../html/login.html">Cerrar sesión</a></li>
+          <li><a href="../html/Maquinas.html">Machines</a></li>
+          <li><a href="../html/Partes_Trabajo.html">Assignments</a></li>
+          <li><a href="../html/UserMain.html">Users</a></li>
+          <li><a href="../html/Averias.html">Breakdowns</a></li>
+          <li><a href="../html/login.html">Log out</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Contenido principal centrado -->
     <main class="centered-content">
-      <h1>Listado de Máquinas <span class="icon">🛠️</span></h1>
+      <h1>List of Machines <span class="icon">🛠️</span></h1>
       <div class="machine-list">
         <!-- Lista dinámica de máquinas -->
         <div class="machine-card">
-          <img src="../images/machine.png" alt="Máquina 1" />
-          <h3>Máquina 1</h3>
+          <img src="../images/machine.png" alt="Machine 1" />
+          <h3>Machine 1</h3>
           <p><i class="fa-solid fa-fingerprint"></i> 45187</p>
-          <p><i class="fa-solid fa-stethoscope"></i> Activa</p>
-          <p>Máquina para corte industrial.</p>
+          <p><i class="fa-solid fa-stethoscope"></i> Active</p>
+          <p>Industrial cutting machine.</p>
           <button onclick="window.location.href='../html/detalleMaquina.html'">
-            Más información
+            More information
           </button>
         </div>
         <!-- Repetir el bloque de la máquina para más elementos -->
         <div class="machine-card">
-          <img src="../images/machine.png" alt="Máquina 2" />
-          <h3>Máquina 2</h3>
+          <img src="../images/machine.png" alt="Machine 2" />
+          <h3>Machine 2</h3>
           <p><i class="fa-solid fa-fingerprint"></i> 72156</p>
-          <p><i class="fa-solid fa-stethoscope"></i> Inactiva</p>
-          <p>Máquina de soldadura industrial.</p>
+          <p><i class="fa-solid fa-stethoscope"></i> Inactive</p>
+          <p>Industrial welding machine.</p>
           <button onclick="window.location.href='../html/detalleMaquina.html'">
-            Más información
+            More information
           </button>
         </div>
         <div class="machine-card">
-          <img src="../images/machine.png" alt="Máquina 3" />
-          <h3>Máquina 3</h3>
+          <img src="../images/machine.png" alt="Machine 3" />
+          <h3>Machine 3</h3>
           <p><i class="fa-solid fa-fingerprint"></i> 01342</p>
-          <p><i class="fa-solid fa-stethoscope"></i> Activa</p>
-          <p>Máquina para corte de piezas metálicas.</p>
+          <p><i class="fa-solid fa-stethoscope"></i> Active</p>
+          <p>Metal cutting machine.</p>
           <button onclick="window.location.href='../html/detalleMaquina.html'">
-            Más información
+            More information
           </button>
         </div>
       </div>
       <div class="button-wrapper">
         <button onclick="window.location.href='./addMachine.html'">
-          Añadir máquina
+          Add machine
         </button>
         <button onclick="window.location.href='./addFault.html'">
-          Reportar avería
+          Report a breakdown
         </button>
       </div>
     </main>
     <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Empresa XYZ</p>
+      <p>&copy; 2025 XYZ Company</p>
     </footer>
   </body>
 </html>

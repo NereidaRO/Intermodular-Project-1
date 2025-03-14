@@ -1,160 +1,142 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Página para gestionar usuarios" />
+    <meta name="description" content="User Management Page" />
     <meta
       name="keywords"
-      content="taller, máquina, machine, gestión, management"
+      content="workshop, machine, management, users, workers"
     />
     <meta name="author" content="Nereida, Ayman, Diego" />
-    <title>Editar Usuarios</title>
+    <title>Manage Users</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../css/script.js"></script>
   </head>
   <body>
-    <!-- Barra de navegación sticky -->
     <header>
       <div class="logo-company">
-        <img src="../images/logo.png" alt="Logo de la empresa" />
+        <img src="../images/logo.png" alt="Company's logo" />
       </div>
       <div class="mb-menu-toggle">&#9776;</div>
       <nav class="main-menu-header hide-me">
         <ul>
-          <li><a href="../html/Maquinas.html">Máquinas</a></li>
-          <li><a href="../html/Partes_Trabajo.html">Partes de trabajo</a></li>
-          <li><a href="../html/UserMain.html">Usuarios</a></li>
-          <li><a href="../html/Averias.html">Averías</a></li>
-          <li><a href="../html/login.html">Cerrar sesión</a></li>
+          <li><a href="../html/Maquinas.html">Machines</a></li>
+          <li><a href="../html/Partes_Trabajo.html">Assignments</a></li>
+          <li><a href="../html/UserMain.html">Users</a></li>
+          <li><a href="../html/Averias.html">Breakdowns</a></li>
+          <li><a href="../html/login.html">Log out</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- Contenido principal centrado -->
     <main class="centered-content">
-      <h1>Listado de Usuarios <span class="icon">👥</span></h1>
+      <h1>Users List<span class="icon">👥</span></h1>
       <div class="user-list">
-        <!-- Tarjeta de usuario 1 -->
         <div class="user-card">
           <div class="user-info">
-            <p><strong>DNI:</strong> 12345678A</p>
-            <p><strong>Nombre:</strong> Juan Pérez</p>
-            <p><strong>Rol:</strong> Mecánico</p>
+            <p><strong>ID:</strong> 12345678A</p>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Role:</strong> Mechanic</p>
             <p>
-              <strong><span class="icon-phone">📞</span>:</strong> 600123456
+              <strong><span class="icon-phone">📞</span>:</strong> +34 600123456
             </p>
             <p>
               <strong><span class="icon-mail">✉️</span>:</strong>
-              juan.perez@example.com
+              john.doe@example.com
             </p>
           </div>
           <div class="user-actions">
             <button onclick="window.location.href='./holiday.html'">
-              Asignar Vacaciones
+              Assign Holidays
             </button>
             <div class="iconos">
               <a href="#" class="editar">✏️</a>
-              <!-- Icono lápiz -->
               <a href="#" class="borrar">❌</a>
-              <!-- Icono X -->
             </div>
           </div>
         </div>
 
-        <!-- Tarjeta de usuario 2 -->
         <div class="user-card">
           <div class="user-info">
-            <p><strong>DNI:</strong> 23456789B</p>
-            <p><strong>Nombre:</strong> María López</p>
-            <p><strong>Rol:</strong> Administrativa</p>
+            <p><strong>ID:</strong> 23456789B</p>
+            <p><strong>Name:</strong> Mary Smith</p>
+            <p><strong>Role:</strong> Administrative</p>
             <p>
-              <strong><span class="icon-phone">📞</span>:</strong> 600987654
+              <strong><span class="icon-phone">📞</span>:</strong> +34 600987654
             </p>
             <p>
               <strong><span class="icon-mail">✉️</span>:</strong>
-              maria.lopez@example.com
+              mary.smith@example.com
             </p>
           </div>
           <div class="user-actions">
             <button onclick="window.location.href='./holiday.html'">
-              Asignar Vacaciones
+              Assign Holidays
             </button>
             <div class="iconos">
               <a href="#" class="editar">✏️</a>
-              <!-- Icono lápiz -->
               <a href="#" class="borrar">❌</a>
-              <!-- Icono X -->
             </div>
           </div>
         </div>
 
-        <!-- Tarjeta de usuario 3 -->
         <div class="user-card">
           <div class="user-info">
-            <p><strong>DNI:</strong> 34567890C</p>
-            <p><strong>Nombre:</strong> Laura García</p>
-            <p><strong>Rol:</strong> Supervisora</p>
+            <p><strong>ID:</strong> 34567890C</p>
+            <p><strong>Name:</strong> Laura Johnson</p>
+            <p><strong>Role:</strong> Supervisor</p>
             <p>
-              <strong><span class="icon-phone">📞</span>:</strong> 600345678
+              <strong><span class="icon-phone">📞</span>:</strong> +34 600345678
             </p>
             <p>
               <strong><span class="icon-mail">✉️</span>:</strong>
-              laura.garcia@example.com
+              laura.johnson@example.com
             </p>
           </div>
           <div class="user-actions">
             <button onclick="window.location.href='./holiday.html'">
-              Asignar Vacaciones
+              Assign Holidays
             </button>
             <div class="iconos">
               <a href="#" class="editar">✏️</a>
-              <!-- Icono lápiz -->
               <a href="#" class="borrar">❌</a>
-              <!-- Icono X -->
             </div>
           </div>
         </div>
 
-        <!-- Tarjeta de usuario 4 -->
         <div class="user-card">
           <div class="user-info">
-            <p><strong>DNI:</strong> 45678901D</p>
-            <p><strong>Nombre:</strong> Carlos Rodríguez</p>
-            <p><strong>Rol:</strong> Ingeniero</p>
+            <p><strong>ID:</strong> 45678901D</p>
+            <p><strong>Name:</strong> Charles Smith</p>
+            <p><strong>Role:</strong> Engineer</p>
             <p>
-              <strong><span class="icon-phone">📞</span>:</strong> 600112233
+              <strong><span class="icon-phone">📞</span>:</strong> +34 600112233
             </p>
             <p>
               <strong><span class="icon-mail">✉️</span>:</strong>
-              carlos.rodriguez@example.com
+              charles.smith@example.com
             </p>
           </div>
           <div class="user-actions">
             <button onclick="window.location.href='./holiday.html'">
-              Asignar Vacaciones
+              Assign Holidays
             </button>
             <div class="iconos">
               <a href="#" class="editar">✏️</a>
-              <!-- Icono lápiz -->
               <a href="#" class="borrar">❌</a>
-              <!-- Icono X -->
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Botón al final -->
       <div class="button-wrapper">
-        <button onclick="window.location.href='User-New.html'">
-          Registrar Usuario
-        </button>
+        <button onclick="window.location.href='User-New.html'">Sign</button>
       </div>
     </main>
 
-    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Empresa XYZ</p>
+      <
+      <p>&copy; 2025 XYZ Company</p>
     </footer>
   </body>
 </html>
